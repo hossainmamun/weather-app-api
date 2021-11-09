@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- searching area -->
+    <section id="searching-interface">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 bg-white p-4">
+                    <h1 class="header">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                        weather status
+                    </h1>
+                    <p id="wrong-cityName"></p>
+                    <div class="form-group d-flex">
+                        <input type="text" name="" id="search-field" class="form-control rounded-0 text-capitalize"
+                            placeholder="Enter City Name" required>
+                        <button id="search-btn" class="btn btn-warning rounded-0 px-4"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- home ui -->
+    <section id="home-ui">
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center p-4 bg-white">
+                    <h2 id="city-name" class="mb-3 font-weight-bold"></h2>
+                    <h3 id="temperature"></h3>
+                    <p id="w-define" class="mb-2"></p>
+                    <p id="location-detail"></p>
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th>Temperature</th>
+                                <th>Humidity</th>
+                                <th>wind speed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="fill"></td>
+                                <td id="humidity"></td>
+                                <td id="wind-speed"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="ui-change-btn" class="btn btn-info mt-4">Search City</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <button id="reset-btn" class="btn btn-light mt-4">Reset</button>
+    </div>
+
+    <!-- js file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

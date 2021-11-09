@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+  background-image: url(../image/weather-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#searching-interface .header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+#searching-interface {
+  display: none;
+}
+
+#result-interface {
+  display: none;
+}
+
+#reset-btn {
+  display: none;
+  margin: auto;
+}
+
+#spinner {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
